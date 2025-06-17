@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inova Supply - Catálogo Atacado C/ Segurança e Frete Grátis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Acesse o catálogo Inova Supply: produtos de consumo prático no atacado, pedido mínimo R$299,90, frete grátis a partir de R$499,90 e segurança anti-golpe com vídeo ao vivo.">
+    <meta property="og:title" content="Inova Supply - Catálogo Atacado C/ Segurança e Frete Grátis">
+    <meta property="og:description" content="Acesse o catálogo Inova Supply: produtos de consumo prático no atacado, pedido mínimo R$299,90, frete grátis a partir de R$499,90 e segurança anti-golpe com vídeo ao vivo.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Inova+Supply+Catalogo+e+Lucro"> <meta property="og:url" content="URL_DA_SUA_PAGINA">
+    <meta property="og:type" content="website">
+
+    <style>
+        /* --- Estilos Gerais e Reset --- */
+        :root {
+            /* Paleta de Cores Preferida */
+            --primary-color: #007bff; /* Azul vibrante */
+            --secondary-color: #6c757d; /* Cinza */
+            --accent-color: #28a745; /* Verde para sucesso/CTA */
+            --text-color-dark: #343a40; /* Texto escuro */
+            --text-color-light: #fff; /* Texto claro para fundos escuros */
+            --bg-light: #f8f9fa; /* Fundo claro */
+            --bg-dark: #212529; /* Fundo escuro */
+            --border-color: #dee2e6;
+            --hero-bg-gradient-start: #3a5068; /* Gradiente escuro para fundo de hero */
+            --hero-bg-gradient-end: #1c2a38; /* Gradiente escuro para fundo de hero */
+            --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --shadow-dark: 0 8px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color-dark); /* Padrão para texto em fundo claro */
+            background-color: var(--bg-light);
+            overflow-x: hidden; /* Evita scroll horizontal */
+        }
+
+        .container {
+            max-width: 900px; /* Mais compacto para mobile-first */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* --- Hero Section (A Mais Importante - Tudo na Primeira Dobra) --- */
+        .hero {
+            background: linear-gradient(135deg, var(--hero-bg-gradient-start), var(--hero-bg-gradient-end));
+            color: var(--text-color-light);
+            padding: 40px 20px; /* Ajuste para mobile */
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+            min-height: 100vh; /* Garante que o hero ocupe pelo menos a tela inteira em muitos celulares */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/1600x900?text=Fundo+Produtos+Tecnologicos+Sutil'); /* Imagem de fundo sutil, pode ser de pods */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15; /* Sutilmente mais visível com essas cores */
+            z-index: 0;
+        }
+        .hero .content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 550px; /* Limita a largura do conteúdo principal */
+        }
+        .hero h1 {
+            font-size: 2.5em; /* Ajustado para mobile */
+            margin-bottom: 15px;
+            line-height: 1.2;
+            font-weight: 800;
+            color: var(--text-color-light);
+            text-shadow: 0 0 8px rgba(0, 123, 255, 0.4); /* Brilho azul sutil */
+        }
+        .hero p {
+            font-size: 1.2em; /* Ajustado para mobile */
+            margin-bottom: 25px;
+            color: #e0e0e0;
+            font-weight: 500;
+        }
+
+        /* --- Lista de Benefícios Chave (Bullets Rápidos) --- */
+        .key-benefits {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 35px 0; /* Espaçamento antes do botão */
+            text-align: left;
+        }
+        .key-benefits li {
+            font-size: 1.05em; /* Leitura rápida */
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-weight: 600;
+            color: var(--text-color-light);
+            background-color: rgba(0,0,0,0.2); /* Fundo sutil para destacar os bullets */
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+        .key-benefits li .icon {
+            color: var(--accent-color); /* Ícone verde de destaque */
+            font-size: 1.4em;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+        .key-benefits li span {
+            flex-grow: 1;
+        }
+
+        /* --- Botão Principal (Sempre Visível) --- */
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 20px 25px;
+            background-color: var(--accent-color); /* Verde vibrante */
+            color: var(--text-color-light);
+            font-size: 1.6em; /* Tamanho ótimo para polegar */
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4); /* Sombra do botão verde */
+        }
+        .cta-button:hover {
+            background-color: #218838; /* Verde mais escuro no hover */
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(40, 167, 69, 0.6);
+        }
+
+        /* --- Seção de Prova Social (Opcional, se o usuário rolar) --- */
+        .testimonials-section {
+            background-color: var(--bg-light);
+            padding: 50px 20px; /* Padding ajustado */
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+        }
+        .testimonials-section h2 {
+            font-size: 2em; /* Menor para celular */
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .testimonial-card {
+            background-color: #fff;
+            padding: 25px; /* Menos padding */
+            border-radius: 10px;
+            box-shadow: var(--shadow-light);
+            text-align: center;
+            font-style: italic;
+            position: relative;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px; /* Espaço entre os cards em mobile */
+        }
+        .testimonial-card:last-child {
+            margin-bottom: 0;
+        }
+        .testimonial-card p {
+            font-size: 0.95em; /* Ajuste para leitura em mobile */
+            line-height: 1.6;
+            margin-bottom: 12px;
+            color: var(--text-color-dark);
+            opacity: 0.9;
+        }
+        .testimonial-card .author {
+            font-weight: 600;
+            color: var(--primary-color);
+            font-style: normal;
+            font-size: 0.9em;
+            display: block;
+            margin-top: 8px;
+        }
+
+        /* --- Rodapé --- */
+        .footer {
+            background-color: var(--bg-dark);
+            color: #ccc;
+            text-align: center;
+            padding: 25px 20px; /* Padding ajustado */
+            font-size: 0.8em;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .footer p {
+            margin-bottom: 6px;
+            color: #aaa;
+        }
+        .footer a {
+            color: #eee;
+            text-decoration: none;
+            margin: 0 6px;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- Responsividade Específica para Mobile --- */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 30px 15px;
+            }
+            .hero h1 {
+                font-size: 2em; /* Para telas menores */
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            .key-benefits li {
+                font-size: 0.95em;
+            }
+            .cta-button {
+                font-size: 1.4em;
+                padding: 16px 20px;
+            }
+            .testimonials-section {
+                padding: 30px 15px;
+            }
+            .testimonials-section h2 {
+                font-size: 1.7em;
+            }
+            .testimonial-card {
+                padding: 18px;
+            }
+            .testimonial-card p {
+                font-size: 0.85em;
+            }
+            .testimonial-card .author {
+                font-size: 0.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.7em;
+            }
+            .hero p {
+                font-size: 0.9em;
+            }
+            .key-benefits li {
+                font-size: 0.85em;
+            }
+            .cta-button {
+                font-size: 1.2em;
+                padding: 14px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="content">
+            <h1>Acesso Instantâneo: Catálogo Atacado Inova Supply</h1>
+            <p>Sua chance de lucrar com **pods descartáveis** de alta demanda, sem golpes e com condições exclusivas:</p>
+
+            <ul class="key-benefits">
+                <li><span class="icon">&#10003;</span> <span>**Pedido Mínimo Reduzido:** Apenas R$ 299,90 (um dos menores do Brasil!)</span></li>
+                <li><span class="icon">&#10003;</span> <span>**Frete GRÁTIS** para pedidos a partir de R$ 499,90</span></li>
+                <li><span class="icon">&#10003;</span> <span>**Segurança Anti-Golpe:** Valide seu pedido por **chamada de vídeo ao vivo!**</span></li>
+                <li><span class="icon">&#10003;</span> <span>**WhatsApp Direto:** Suporte exclusivo ao finalizar seu pedido.</span></li>
+            </ul>
+
+            <a href="https://fornecedorpods.ola.click/products" target="_blank" class="cta-button">
+                <span>ACESSAR CATÁLOGO E TABELA DE PREÇOS AGORA!</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>Quem Já Está Lucrando Conosco:</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Fui enganado várias vezes, mas a chamada de vídeo da Inova Supply me deu total confiança. Meus produtos chegaram perfeitos e minhas vendas explodiram!"</p>
+                    <p class="author">- Carlos A., Lojista de SP</p>
+                </div>
+                <div class="testimonial-card">
+                    <p>"O pedido mínimo baixo e o frete grátis são um diferencial. Consigo manter meu estoque sempre atualizado sem prender muito capital. Parabéns!"</p>
+                    <p class="author">- Sabrina L., Empreendedora Online</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Inova Supply. Todos os direitos reservados.</p>
+            <p>
+                <a href="#">Política de Privacidade</a> | 
+                <a href="#">Termos de Serviço</a> | 
+                <a href="#">Contato</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
